@@ -8,21 +8,22 @@
 ### What the script does
 ##### The script I have developed looks at the impact of sleep deprivation on survival
 1. **Processing of the metadata**
-##### The script starts by reading in the data and does the following:
+##### The script starts by reading in the data from the Github repository (versioned_dir) and does the following:
 ##### - Reads the dataset (Metadata_1.xlsx) using pandas.
-##### - Converts the data in survival_30_10 to numerical values 0 being alive and 1 being dead.
+##### - Converts the data in survival_30_10 to numerical values: 0 = alive, 1 = dead.
 ##### - Removes any invalid data in the time and survival_30_10 column
-##### - Converts the time column to a  numeric form
 2. **Kaplan-Meier survival analysis**
-   ##### This section sorts the data into the different species.
-   ##### The lifelines packages is then used to create the survival curves with survival probability on the y-axis and time in days on the x. This is done for all of the species together and then each of the different species separately - always looking to compare between the SD and the control in the individual graphs as well as any species differences in the graph where all species are plotted.
+##### The lifelines packages is used to create the survival curves with survival probability on the y-axis and time in days on the x. This is done for all of the species together and then each of the different species separately - comparing between the SD groups and the C groups in the individual graphs as well as any species differences in the graph where all species are plotted.
 3. **Bar charts showing the number of flies alive from day 0-9**
 ##### This part of the script is because I thought it may be more easier to understand and visualise what is going on using a bar chart plot. It allows you to see the number of flies alive at the start of the experiment (day 0) and compare it to the end of the experiment (day 9).
 4. **Statistical analysis of the bar chart data**
-### Installs
-##### Before running the script, please ensure you have the following libraries installed:
+##### A two-sample t-test was used on the bar charts to identify if there is any statistical difference between the SD groups and the C groups.
+### Installs and imports
+##### To succesfully run the script these libraries are required. The script does include code which will automatically import them for you but they will need to be installed if they are not already. To do so you can run: pip install pandas matplotlib seaborn lifelines scipy 
 ##### - pandas - allows data to be loaded, manipulated and analysed
 ##### - matplotlib - for visuals
 ##### - seaborn - generates the bar charts
-##### - lifelines - for the Kaplan Meier analysis
+##### - KaplanMeierFitter from lifelines - for the Kaplan Meier analysis
+##### - ttest_ind from scipy.stats
 ### References
+##### Geissmann, Q., et al. (2017). Ethoscopes: An open platform for high throughput analysis of behaviour. https://pmc.ncbi.nlm.nih.gov/articles/PMC5648103/
