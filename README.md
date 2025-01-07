@@ -10,7 +10,7 @@ In this experiment:
 - **Sleep-deprived (SD)** the experimental subjects kept awake using a motor device in the ethoscope which rotated after every 30 seconds of inactivity of the fly. 
 ### How to Run the Script
 1. Extract the ZIP file on blackboard and add to your desktop. 
-2. In the folder you will find, the Data Science report, Metadata_1.xlsx, this README document and importantly, the script - **project.py**. 
+2. In the folder you will find a folder called data science assignment. Within that you should see: the Data Science report, Metadata_1.xlsx, this README document and importantly, the script - **project.py**. 
 3. Right-click project.py and open in a text editor such as notepad.
 4. Copy the script from notepad and paste the entire script into Jupyter Notebook.
 5. Run the script. 
