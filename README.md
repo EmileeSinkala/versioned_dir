@@ -8,13 +8,6 @@ Ethoscopes are machines which can provide different behavioural stimuli in diffe
 In this experiment:
 - **Controls (C)** were not sleep deprived.
 - **Sleep-deprived (SD)** the experimental subjects kept awake using a motor device in the ethoscope which rotated after every 30 seconds of inactivity of the fly. 
-### How to Run the Script
-1. Extract the ZIP file on blackboard and add to your desktop. 
-2. In the folder you will find a folder called data science assignment. Within that you should see: the Data Science report, Metadata_1.xlsx, this README document and importantly, the script - **project.py**. 
-3. Right-click project.py and open in a text editor such as notepad.
-4. Copy the script from notepad and paste the entire script into Jupyter Notebook.
-5. Run the script. 
-*If you still cannot access the script via the above steps, access it from my Github repository found here: https://github.com/EmileeSinkala/versioned_dir
 ### What the Script Does
 The script I have developed looks at the impact of sleep deprivation on survival. Before running the script, make sure all of the files are in the same directory (Metadata_1 and project.py).
 1. **Processing of the metadata**
